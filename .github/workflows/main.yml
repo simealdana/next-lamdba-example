@@ -18,6 +18,9 @@ jobs:
         run: npm install
       - name: Build
         run: npm build
+  deploy:
+      runs-on: ubuntu-latest
+      steps:
       - name: Configure AWS Credentials
         uses: aws-actions/configure-aws-credentials@v1
         with:
