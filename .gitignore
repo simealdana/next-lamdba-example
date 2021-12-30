@@ -35,3 +35,10 @@ yarn-error.log*
 
 # typescript
 *.tsbuildinfo
+/.serverlesss
+
+# Serverless Framework directories
+.serverless
+.serverless_nextjs
+./serverless
+.serverless/_.json
