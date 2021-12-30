@@ -1,6 +1,6 @@
 myNextApplication:
   component: "@sls-next/serverless-component"
 inputs:
-    domain: ["wwww.capybaraswampclub.xyz","capybaraswampclub.xyz"]
+    domain: "capybaraswampclub.xyz"
     cloudfront:
       distributionId: E1NGE3U8HFNWV1
