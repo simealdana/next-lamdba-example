@@ -10,7 +10,7 @@ module.exports = {
     extend: {
       colors:{
         'primary-background':'var(--background-primary)',
-        'sec-background':'var(--background-sec)',
+        'secondary-background':'var(--background-secondary)',
         'menu-background':'var(--background-menu)',
         primary:'var(--color-primary)',
         secondary:'var(--color-secondary)',

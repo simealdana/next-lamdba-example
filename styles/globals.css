@@ -2,6 +2,10 @@
 @tailwind components;
 @tailwind utilities;
 
+.bg-secondary-background{
+  background-color: var(--background-secondary);
+}
+
 .border-button{
     border: solid 0.1rem;
     border-radius: 0.6rem;
@@ -128,4 +132,23 @@
   padding: 0.5rem 1rem;
   background: linear-gradient(to right,#C21500,#FFC500);
   color: #ffffff;
+}
+
+.alternate__grid__list .left{
+  margin-left: -10rem;
+  margin-right: 2rem;
+}
+
+.alternate__grid__list .right{
+  margin-left: -2rem;
+}
+
+@media only screen and (max-width: 600px) {
+  .alternate__grid__list .left{
+    margin-left: -4rem;
+    margin-right: 1rem;
+  }
+  .alternate__grid__list .right{
+    margin:auto
+  }
 }

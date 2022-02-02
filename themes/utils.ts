@@ -4,7 +4,7 @@ import { IMappedTheme, ITheme } from "./interface";
 export const mapTheme = (variables: ITheme): IMappedTheme => {
   return {
     "--background-primary": variables.backgroundPrimary || "",
-    "--background-sec-": variables.backgroundSecondary|| "",
+    "--background-secondary": variables.backgroundSecondary|| "",
     "--background-menu":variables.backgroundMenu|| "",
     "--color-primary": variables.primary || "",
     "--color-secondary": variables.secondary || "",

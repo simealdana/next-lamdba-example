@@ -4,6 +4,7 @@ import Image from 'next/image'
 import { useEffect, useState } from 'react';
 import { NavBar } from '../components/navBar';
 import { useResize } from '../hooks/useResize';
+import { GridAlternateSection } from '../sections/GridAlternateSection';
 import { HeroSection } from '../sections/HeroSection';
 import styles from '../styles/Home.module.css';
 import homeStyled from '../styles/styles';
@@ -26,6 +27,7 @@ const Home: NextPage = () => {
 
       <main>
         <HeroSection breackPoint={size}/>
+        <GridAlternateSection/>
       </main>
 
       <footer className={styles.footer}>
