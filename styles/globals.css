@@ -181,6 +181,13 @@ h4{
   animation-timing-function: linear;
 }
 
+.footer__icons li{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+}
+
 @media only screen and (max-width: 600px) {
   h4{
     font-size: 1.5rem;

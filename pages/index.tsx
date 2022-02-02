@@ -4,6 +4,7 @@ import Image from "next/image";
 import { useEffect, useState } from "react";
 import { NavBar } from "../components/navBar";
 import { useResize } from "../hooks/useResize";
+import { Footer } from "../sections/Footer";
 import { GridAlternateSection } from "../sections/GridAlternateSection";
 import { HeroSection } from "../sections/HeroSection";
 import { SocialMediaSection } from "../sections/SocialMediaSection";
@@ -35,8 +36,7 @@ const Home: NextPage = () => {
       </main>
       <GridAlternateSection />
       <SocialMediaSection />
-
-      <footer className={styles.footer}></footer>
+      <Footer />
     </div>
   );
 };
