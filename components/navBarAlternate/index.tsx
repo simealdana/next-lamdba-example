@@ -3,11 +3,12 @@ import { ImageWithSketelon } from "../shared/Image";
 import { Icono } from "../shared/icono";
 import { SOCIALMEDIALIST } from "./constants";
 import { SocialMedia } from "./interfaces";
+import { uuid } from 'uuidv4';
 
 export const NavBarAlternate = () => {
   const IconsList = (list: SocialMedia[]): any =>
     list.map(({ iconSvg, url }) => (
-      <li className="px-3">
+      <li className="px-3" key={uuid()}>
         <Icono width={30} height={30} svgUrl={iconSvg} url={url} />
       </li>
     ));
