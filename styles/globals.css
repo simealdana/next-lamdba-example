@@ -55,7 +55,7 @@
 
 .hero__content__description button{
     border-radius: 0.6rem;
-    padding: 0.5rem;
+    padding: 0.5rem 1rem;
     background: linear-gradient(to right,#C21500,#FFC500);
 }
 
@@ -95,4 +95,37 @@
 
 .d_none{
     display: none;
+}
+
+.alternate__hero{
+  height: 100vh;
+  width: 100%;
+  color: #000000;
+  background-image: url(https://i.pinimg.com/originals/79/a3/84/79a384c3c449ad01b0e57e790807b2c0.gif);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 70%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+
+}
+
+.alternate_hero__content{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+}
+.alternate_hero__content span{
+  padding-bottom: 0.5rem !important;
+}
+
+.alternate__hero button{
+  border-radius: 0.6rem;
+  padding: 0.5rem 1rem;
+  background: linear-gradient(to right,#C21500,#FFC500);
+  color: #ffffff;
 }
