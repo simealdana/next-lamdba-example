@@ -1,5 +1,5 @@
-import { Hero } from "../../components/hero"
-import { NavBar } from "../../components/navBar"
+import { Hero } from "../../components/hero";
+import { NavBarAlternate } from "../../components/navBarAlternate";
 import { BreakPoints } from "../../hooks/useResize";
 import homeStyled from "../../styles/styles"
 
@@ -11,7 +11,7 @@ export const HeroSection = ({breackPoint}:HeroInterfaces)=>{
     return(
         <section className={`bg-primary-background`}>
             <div className={`${homeStyled.container}`}>
-                <NavBar/>
+                <NavBarAlternate/>
                 <Hero  breackPoint={breackPoint}/>
             </div>
         </section>
