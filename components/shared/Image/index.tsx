@@ -1,5 +1,6 @@
 import { Fragment, useState } from "react";
 import Image from "next/image";
+import { styles } from "./style";
 export interface ImageProps {
   src: string;
   width: number ;
@@ -22,7 +23,7 @@ export const ImageWithSketelon = ({src,alt,width=0,height=0}: ImageProps) => {
   return (
     <Fragment>
       <Image
-        className={isImageReady ? "" : "d_none"}
+        className={isImageReady ? "" : styles.displayNone}
         width={width} 
         height={height}
         src={src}

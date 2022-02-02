@@ -1,17 +1,9 @@
 import { style } from "./style";
 import { ImageWithSketelon } from "../shared/Image";
-import { Icono } from "../shared/icono";
 import { SOCIALMEDIALIST } from "./constants";
-import { SocialMedia } from "./interfaces";
-import { uuid } from 'uuidv4';
-
+import { IconsList } from "../shared/socialMediaList";
 export const NavBarAlternate = () => {
-  const IconsList = (list: SocialMedia[]): any =>
-    list.map(({ iconSvg, url }) => (
-      <li className="px-3" key={uuid()}>
-        <Icono width={30} height={30} svgUrl={iconSvg} url={url} />
-      </li>
-    ));
+
   return (
     <nav className={style.navBar}>
       <ImageWithSketelon
@@ -20,7 +12,9 @@ export const NavBarAlternate = () => {
         width={72}
         height={40}
       />
-      <ul className="flex">{IconsList(SOCIALMEDIALIST)}</ul>
+      <ul className="flex">
+        <IconsList items={SOCIALMEDIALIST} classes={"px-3"}/>
+      </ul>
     </nav>
   );
 };

@@ -1,4 +1,4 @@
-import { SocialMedia } from "../shared/socialMediaList/interfaces";
+import { SocialMedia } from "../socialMediaList/interfaces";
 
 export const SOCIALMEDIALIST: SocialMedia[] = [
   {

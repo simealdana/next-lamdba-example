@@ -3,3 +3,8 @@ export interface SocialMedia {
   url: string;
   iconSvg: string;
 }
+
+export interface IconoListProps{
+  items:SocialMedia[]
+  classes:string;
+}

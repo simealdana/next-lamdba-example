@@ -5,6 +5,11 @@
 body{
   font-family: 'Montserrat', sans-serif;
 }
+h4{
+  font-family: 'Montserrat', sans-serif;
+  font-size: 2.125rem;
+  font-weight: 700;
+}
 
 .bg-secondary-background{
   background-color: var(--background-secondary);
@@ -146,7 +151,40 @@ body{
   margin-left: -2rem;
 }
 
+.social__media__circle{
+  width: 40px;
+  height: 40px;
+  -moz-border-radius: 50%;
+  -webkit-border-radius: 50%;
+  border-radius: 50%;
+  color:var(--color-secondary);
+  border: 0.125rem dashed var(--color-secondary);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0;
+    align-content: center;
+}
+.social__media__circle a{
+  display: flex;
+}
+
+.social__media__circle:hover{
+  border: none;
+}
+.social__media__circle:hover{
+  border-top: 0.125rem dashed var(--color-secondary);
+  border-right: 0.125rem dashed var(--color-secondary);
+  animation-name: spin;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+
 @media only screen and (max-width: 600px) {
+  h4{
+    font-size: 1.5rem;
+  }
   .alternate__grid__list .left{
     margin-left: -4rem;
     margin-right: 1rem;
@@ -156,5 +194,14 @@ body{
   }
   .alternate__hero{
     height: 80vh;
+  }
+}
+
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
   }
 }
