@@ -9,7 +9,6 @@ interface HeroInterfaces {
   breackPoint: BreakPoints;
 }
 
-const loader = () => <h1>Hola</h1>;
 export const Hero = ({ breackPoint }: HeroInterfaces) => {
   return (
     <div className={styles.heroContainer}>
