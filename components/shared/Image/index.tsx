@@ -9,7 +9,7 @@ export interface ImageProps {
 }
 
 export interface ImageSkeleton {
-  width: number ;
+  width: number  ;
   height: number ;
 }
 export const ImageLoading = (props: ImageSkeleton) => (

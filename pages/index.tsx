@@ -1,15 +1,12 @@
 import type { NextPage } from "next";
 import Head from "next/head";
-import Image from "next/image";
 import { useEffect, useState } from "react";
-import { NavBar } from "../components/navBar";
 import { useResize } from "../hooks/useResize";
 import { Footer } from "../sections/Footer";
 import { GridAlternateSection } from "../sections/GridAlternateSection";
 import { HeroSection } from "../sections/HeroSection";
 import { SocialMediaSection } from "../sections/SocialMediaSection";
 import styles from "../styles/Home.module.css";
-import homeStyled from "../styles/styles";
 import { DEFAULT_THEME } from "../themes";
 import { applyTheme } from "../themes/utils";
 

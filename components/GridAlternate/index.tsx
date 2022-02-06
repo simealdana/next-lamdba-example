@@ -1,41 +1,9 @@
-import { GridList } from "./components/gridList"
-import { GridAlternateItem } from "./interfaces";
+import { GridList } from "./components/gridList";
+import { ITEMS } from "./constans";
+import { styles } from "./styles";
 
-const ITEMS:GridAlternateItem[] = [
-    {
-        src:"/img/heroSecction-Capybaraimage.png",
-        alt: "/img/heroSecction-Capybaraimage.png"
-    },
-    {
-        src:"/img/heroSecction-Capybaraimage.png",
-        alt: "/img/heroSecction-Capybaraimage.png"
-    },
-    {
-        src:"/img/heroSecction-Capybaraimage.png",
-        alt: "/img/heroSecction-Capybaraimage.png"
-    },
-    {
-        src:"/img/heroSecction-Capybaraimage.png",
-        alt: "/img/heroSecction-Capybaraimage.png"
-    },
-    {
-        src:"/img/heroSecction-Capybaraimage.png",
-        alt: "/img/heroSecction-Capybaraimage.png"
-    },
-];
-export const GridAlternate = ()=>{
-    return(
-        <div className="alternate__grid__list py-5">
-            <div className="left">
-                <GridList items={ITEMS} classes="flex"/>
-            </div>
-            <div className="right">
-                <GridList items={ITEMS} classes="flex"/>
-            </div>
-            <div className="left">
-                <GridList items={ITEMS} classes="flex"/>
-            </div>
-
-        </div>
-    )
-}
+export const GridAlternate = () => (
+  <div className={`${styles.alternateList}`}>
+    <GridList items={ITEMS} classes="flex" />
+  </div>
+);

@@ -15,9 +15,9 @@ export const HeroAlternate = ({ breackPoint }: HeroInterfaces) => {
     <main className="alternate__hero">
         <div className="alternate_hero__content">
             <ImageWithSketelon
-                src="/img/heroSecction-Capybaraimage.png"
-                width={400}
-                height={400}
+                src="https://res.cloudinary.com/doa8qp6ca/image/upload/v1644170516/capybaras/CAPYillustration_3_2_vwxrl5.png"
+                width={500}
+                height={500}
                 alt="test"
             />
             <Button
