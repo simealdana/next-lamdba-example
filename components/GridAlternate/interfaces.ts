@@ -1,3 +1,4 @@
+import { BreakPoints } from "../../hooks/useResize";
 
 export interface GridAlternateItem{
     src:string;
@@ -6,5 +7,6 @@ export interface GridAlternateItem{
 
 export interface GridListProps{
     items:GridAlternateItem[];
-    classes:string
+    classes:string;
+    breackPoint: BreakPoints;
 }

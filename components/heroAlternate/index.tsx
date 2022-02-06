@@ -14,7 +14,6 @@ export const HeroAlternate = ({ breackPoint }: HeroInterfaces) => {
   const [imgSize,setImgSize]=useState<number>(INITAL_SIZE);
 
   const handleSettingImgSize = ()=>{
-    console.log(breackPoint === BreakPoints.MD);
     if( breackPoint === BreakPoints.MD){
       setImgSize(300)
     }
