@@ -1,3 +1,3 @@
 export const messages={
-    socialMediaTitle:'Conect with the community'
+    socialMediaTitle:'Connect with the community'
 }

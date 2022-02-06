@@ -3,6 +3,7 @@ import { messages } from "./messages";
 import { NftCard } from "./components/NftCard";
 import { NFT_CARD_LIST } from "./constants";
 import { styles } from "./styles";
+import { uuid } from "uuidv4";
 
 export const NftsCards:FunctionComponent<any> = ()=>(
     <section className={styles.container}>
@@ -10,7 +11,7 @@ export const NftsCards:FunctionComponent<any> = ()=>(
         <div className={styles.list}>
             {
                 NFT_CARD_LIST.map(n =>(
-                    <NftCard {...n}/>
+                    <NftCard {...n} key={uuid()}/>
                 ))
             }
         </div>
