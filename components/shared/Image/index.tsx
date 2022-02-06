@@ -23,7 +23,7 @@ export const ImageWithSketelon = ({src,alt,width=0,height=0}: ImageProps) => {
   return (
     <Fragment>
       <Image
-        className={isImageReady ? "" : styles.displayNone}
+        className={isImageReady ? "cursor-pointer" : styles.displayNone}
         width={width} 
         height={height}
         src={src}

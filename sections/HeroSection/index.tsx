@@ -11,9 +11,7 @@ interface HeroInterfaces {
 export const HeroSection = ({breackPoint}:HeroInterfaces)=>{
     return(
         <section className={`bg-primary-background`}>
-            <div className={`${homeStyled.container}`}>
                 <NavBarAlternate/>
-            </div>
                 <HeroAlternate  breackPoint={breackPoint}/>
         </section>
     )
