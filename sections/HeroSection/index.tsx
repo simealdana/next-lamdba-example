@@ -13,8 +13,8 @@ export const HeroSection = ({breackPoint}:HeroInterfaces)=>{
         <section className={`bg-primary-background`}>
             <div className={`${homeStyled.container}`}>
                 <NavBarAlternate/>
-                <HeroAlternate  breackPoint={breackPoint}/>
             </div>
+                <HeroAlternate  breackPoint={breackPoint}/>
         </section>
     )
 }

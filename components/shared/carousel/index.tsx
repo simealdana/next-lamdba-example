@@ -12,6 +12,11 @@ export const Carousel = (props:any) => {
     const [touchPosition, setTouchPosition] = useState(null)
 
     // Set the length to match current children from props
+    useEffect(()=>{
+
+     
+
+    },[counter])
     
     useEffect(() => {
         setLength(children.length)
