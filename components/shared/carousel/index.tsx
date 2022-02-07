@@ -12,12 +12,17 @@ export const Carousel = (props:any) => {
     const [touchPosition, setTouchPosition] = useState(null)
 
     // Set the length to match current children from props
-    useEffect(()=>{
-
-     
-
-    },[counter])
     
+    useEffect(() => {
+        const interval = setInterval(() => {
+          console.log('Logs every minute');
+          next();
+        }, 1000);
+      
+        return () => clearInterval(interval); // This represents the unmount function, in which you need to clear your interval to prevent memory leaks.
+      }, [])
+    
+
     useEffect(() => {
         setLength(children.length)
         setIsRepeating(infiniteLoop && children.length > show)
@@ -34,7 +39,6 @@ export const Carousel = (props:any) => {
     }, [currentIndex, isRepeating, show, length])
 
     const next = () => {
-        console.log("aca");
         if (isRepeating || currentIndex < (length - show)) {
             setCurrentIndex((prevState:any) => prevState + 1)
             setCounter((prevState:any) => prevState + 1);
@@ -107,7 +111,7 @@ export const Carousel = (props:any) => {
             <div className="carousel-wrapper">
                 {/* You can alwas change the content of the button to other things */}
                 {
-                    (isRepeating || currentIndex > 0) &&
+                    (isRepeating || currentIndex > 0) && !infiniteLoop &&
                     <button onClick={prev} className="left-arrow">
                         &lt;
                     </button>
@@ -138,7 +142,7 @@ export const Carousel = (props:any) => {
                 </div>
                 {/* You can alwas change the content of the button to other things */}
                 {
-                    (isRepeating || currentIndex < (length - show)) &&
+                    (isRepeating || currentIndex < (length - show)) && !infiniteLoop &&
                     <button onClick={next} className="right-arrow">
                         &gt;
                     </button>

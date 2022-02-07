@@ -1,6 +1,5 @@
-myNextApplication:
+Capybaraswampclub:
   component: "@sls-next/serverless-component"
-inputs:
+  inputs:
     cloudfront:
-      distributionId: E31BBSY0R1ZW4J
-    domain: "capybaraswampclub.xyz"
+      distributionId: E2OFGTYTZZTCKY

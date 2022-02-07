@@ -34,7 +34,7 @@ const Home: NextPage = () => {
       <main>
         <HeroSection breackPoint={size} />
       </main>
-      <GridAlternateSection />
+      <GridAlternateSection breackPoint={size}/>
       <SocialMediaSection />
       <Footer />
     </div>

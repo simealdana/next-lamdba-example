@@ -1,13 +1,17 @@
 import { GridAlternate } from "../../components/GridAlternate"
 import { NftsCards } from "../../components/NftsCards"
-import { useResize } from "../../hooks/useResize";
+import { BreakPoints} from "../../hooks/useResize";
 
-export const GridAlternateSection = ()=>{
-    const size = useResize();
+interface GridAlternateSectionInterfaces {
+    breackPoint: BreakPoints;
+}
+
+
+export const GridAlternateSection:React.FunctionComponent<GridAlternateSectionInterfaces> = ({breackPoint})=>{
     return(
         <section className="bg-primary-background">
                 <NftsCards/>
-                <GridAlternate breackPoint={size}/>
+                <GridAlternate breackPoint={breackPoint}/>
         </section>
     )
 }
