@@ -25,14 +25,14 @@ export const HeroAlternate = ({ breackPoint }: HeroInterfaces) => {
       <div className="alternate_hero__content">
         {size < 1024 && size >= 768 ? (
           <ImageWithSketelon
-            src="https://res.cloudinary.com/doa8qp6ca/image/upload/v1644170516/capybaras/CAPYillustration_3_2_vwxrl5.png"
+            src="/img/CAPYillustration_3_2_vwxrl5.png"
             width={300}
             height={300}
             alt="test"
           />
         ) : (
           <ImageWithSketelon
-            src="https://res.cloudinary.com/doa8qp6ca/image/upload/v1644170516/capybaras/CAPYillustration_3_2_vwxrl5.png"
+            src="/img/CAPYillustration_3_2_vwxrl5.png"
             width={500}
             height={500}
             alt="test"

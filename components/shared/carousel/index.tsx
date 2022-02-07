@@ -8,18 +8,15 @@ export const Carousel = (props:any) => {
 
     const [isRepeating, setIsRepeating] = useState(infiniteLoop && children.length > show)
     const [transitionEnabled, setTransitionEnabled] = useState(true)
-    const [counter,setCounter]=useState<number>(0)
     const [touchPosition, setTouchPosition] = useState(null)
 
     // Set the length to match current children from props
     
     useEffect(() => {
         const interval = setInterval(() => {
-          console.log('Logs every minute');
           next();
         }, 1000);
-      
-        return () => clearInterval(interval); // This represents the unmount function, in which you need to clear your interval to prevent memory leaks.
+        return () => clearInterval(interval);
       }, [])
     
 
@@ -41,7 +38,6 @@ export const Carousel = (props:any) => {
     const next = () => {
         if (isRepeating || currentIndex < (length - show)) {
             setCurrentIndex((prevState:any) => prevState + 1)
-            setCounter((prevState:any) => prevState + 1);
         }
     }
 
