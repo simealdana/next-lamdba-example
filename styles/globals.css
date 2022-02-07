@@ -233,7 +233,9 @@ h4{
     margin-bottom: 0.4rem;
     margin-top: 0.4rem;
   }
-  
+  .alternate__hero{
+    background-image: url(/img/MobileAnimationBackground.gif);
+  }
 }
 
 .nav__alternate_container{

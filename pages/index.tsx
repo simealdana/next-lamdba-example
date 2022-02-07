@@ -21,7 +21,7 @@ const Home: NextPage = () => {
       <Head>
         <title>Capybara Swamp Club</title>
         <meta name="description" content="Capybara's NFT" />
-        <link rel="icon" href="img/imgLogo.png" />
+        <link rel="icon" href="img/capybaraSwampClubLogo.png" />
 
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" />
