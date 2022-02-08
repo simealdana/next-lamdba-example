@@ -2,6 +2,6 @@ export const messages ={
     title:"The capybara's",
     subTiitle:"Announcement",
     date:"Febrary",
-    buttonText:"Join our Discord",
+    buttonText:"JOIN OUR DISCORD",
     mintInfo:"Mint Date soon"
 }

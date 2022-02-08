@@ -30,6 +30,8 @@ export const ImageWithSketelon = ({src,alt,width=0,height=0}: ImageProps) => {
         alt={alt}
         onLoadingComplete={onLoadCallBack}
         onLoad={onLoadCallBack}
+        unoptimized={true}
+        loading="eager"
       />
       {!isImageReady && (
         <ImageLoading width={width} height={height} />

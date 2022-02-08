@@ -6,7 +6,7 @@ import { styles } from "./styles";
 
 export const NftCard:FunctionComponent<NftCardProps> = ({description,icon})=>(
     <div className={styles.card} key={uuid()}>
-        <Icono svgUrl={icon} url={""} width={40} height={40}/>
+        <Icono svgUrl={icon} url={""} width={50} height={50}/>
         <p className={styles.description}>{description}</p>
     </div>
 )

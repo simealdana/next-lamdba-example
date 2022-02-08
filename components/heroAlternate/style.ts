@@ -7,6 +7,6 @@ export const styles = {
   heroH4:"text-5xl py-2",
   heroP:"text-2xl py-2",
   heroH5:"text-4xl py-2",
-  heroButton:"text-primary mt-5 font-bold",
+  heroButton:"text-primary mt-5 font-bold p-10",
   heroImage:"hero__content__image"
 };

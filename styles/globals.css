@@ -160,7 +160,7 @@ h4{
 
 .alternate__hero button{
   border-radius: 0.6rem;
-  padding: 0.5rem 1rem;
+  padding: 0.7rem 1.25rem;
   background: linear-gradient(to right,#C21500,#FFC500);
   color: #ffffff;
 }
@@ -229,7 +229,7 @@ h4{
     height: 80vh;
   }
   .nft-card{
-    width: 60%;
+    width: 90%;
     margin-bottom: 0.4rem;
     margin-top: 0.4rem;
   }
