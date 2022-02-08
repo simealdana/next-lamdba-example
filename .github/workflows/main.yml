@@ -25,4 +25,5 @@ jobs:
           aws-secret-access-key: ${{ secrets.AWS_SECRET }}
           aws-region: us-east-1
       - name: Deploy capybaraswampclub-fe
+        uses: tegud/serverless-github-action@1.52.0
         run: npx serverless
