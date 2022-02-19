@@ -41,7 +41,7 @@ export const HeroAlternate = ({ breackPoint }: HeroInterfaces) => {
 
         <Button
           text={messages.buttonText}
-          onClick={() => handleClick}
+          onClick={() => handleClick()}
           className={styles.heroButton}
         />
       </div>

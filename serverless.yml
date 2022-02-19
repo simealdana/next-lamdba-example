@@ -1,5 +1,5 @@
 Capybaraswampclub:
-  component: "@sls-next/serverless-component@1.18.0"
+  component: "@sls-next/serverless-component"
   inputs:
     cloudfront:
       distributionId: E2OFGTYTZZTCKY
