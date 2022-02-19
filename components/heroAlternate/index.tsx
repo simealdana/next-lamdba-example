@@ -18,7 +18,7 @@ export const HeroAlternate = ({ breackPoint }: HeroInterfaces) => {
     document.body.clientWidth : 1333;
 
   const handleClick = () => {
-    window.open("https://discord.com/", "_blank");
+    window.open("https://discord.com/invite/72yX8YgT");
   };
   return (
     <main className="alternate__hero">
