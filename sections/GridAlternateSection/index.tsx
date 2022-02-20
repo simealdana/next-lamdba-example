@@ -11,7 +11,7 @@ export const GridAlternateSection:React.FunctionComponent<GridAlternateSectionIn
     return(
         <section className="bg-primary-background">
                 <NftsCards/>
-                <GridAlternate breackPoint={breackPoint}/>
+                {/* <GridAlternate breackPoint={breackPoint}/> */}
         </section>
     )
 }
