@@ -1,0 +1,7 @@
+Capybaraswampclub:
+  component: "@sls-next/serverless-component"
+  inputs:
+    domainRedirects:
+      www.capybaraontezos.xyz: https://capybaraontezos.xyz/
+    cloudfront:
+      distributionId: E2OFGTYTZZTCKY
