@@ -3,12 +3,18 @@
   "private": true,
   "scripts": {
     "dev": "next dev",
+    "copy:staging":"cp ./environments/staging/serverless.yml ./",
+    "copy:production":"cp ./environments/production/serverless.yml ./",
+    "copy:development":"cp ./environments/development/serverless.yml ./",
+    "deploy:staging":"npm run copy:staging && npx serverless",
+    "deploy:production":"npm run copy:production && npx serverless",
+    "deploy:development":"npm run copy:development && npx serverless",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint",
-    "deploy": "npx serverless"
+    "lint": "next lint"
   },
   "dependencies": {
+    "env-cmd": "^10.1.0",
     "hamburger-react": "^2.4.1",
     "next": "^12.0.9",
     "react": "17.0.2",
@@ -25,8 +31,5 @@
     "postcss": "^8.4.5",
     "tailwindcss": "^3.0.18",
     "typescript": "4.5.4"
-  },
-  "optionalDependencies": {
-    "@next/swc-linux-x64-musl": "^12.0.1-canary.2"
   }
 }
