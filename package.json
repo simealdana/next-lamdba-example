@@ -6,9 +6,9 @@
     "copy:staging":"cp ./environments/staging/serverless.yml ./",
     "copy:production":"cp ./environments/production/serverless.yml ./",
     "copy:development":"cp ./environments/development/serverless.yml ./",
-    "deploy:staging":"npm run copy:staging && npx serverless",
-    "deploy:production":"npm run copy:production && npx serverless",
-    "deploy:development":"npm run copy:development && npx serverless",
+    "deploy:staging":"npm run copy:staging && npx serverless@2.72.2",
+    "deploy:production":"npm run copy:production && npx serverless@2.72.2",
+    "deploy:development":"npm run copy:development && npx serverless@2.72.2",
     "build": "next build",
     "start": "next start",
     "lint": "next lint"
