@@ -17,11 +17,16 @@ export const NavBar = () => {
       : style.navBar;
 
   const handleClick = () => {
-    console.log("click");
+    console.log("clicked");
   };
   return (
     <nav className={navClasses}>
-      <ImageWithSketelon src="/img/imgLogoNav.png" alt="Vercel Logo" width={72} height={40} />
+      <ImageWithSketelon
+        src="/img/imgLogoNav.png"
+        alt="Vercel Logo"
+        width={72}
+        height={40}
+      />
       <Menu isOpen={isOpen} setItOpen={setItOpen} breackPoint={size} />
       {size !== BreakPoints.SM && size !== BreakPoints.MD && (
         <Button
